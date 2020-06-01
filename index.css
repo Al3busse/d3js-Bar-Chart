@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  background-color: #00478f;
+  background-size: 64px 128px;
+}
+.main .container #title {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+}
+.main .container .visHolder {
+  position: absolute;
+  top: 6em;
+}
