@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #82d6a2;
+}
+
 .main {
   height: 100vh;
   width: 100vw;
@@ -9,16 +14,48 @@
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
-  background-color: #00478f;
+  background-color: #82d6a2;
   background-size: 64px 128px;
 }
+.main .container {
+  height: 560px;
+  width: 900px;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+  align-self: center;
+  position: relative;
+}
+
 .main .container #title {
   text-align: center;
   font-size: 2.5em;
-  color: white;
-  text-shadow: 2px 2px 1px black;
+  color: rgb(0, 32, 0);
+  text-shadow: 1px 1px 1px rgb(97, 95, 95);
 }
-.main .container .visHolder {
+.main .container .chartHolder {
   position: absolute;
   top: 6em;
+}
+
+.bar:hover {
+  fill: red !important;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font: 16px sans-serif;
+  background: rgb(176, 222, 182);
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+#info {
+  text-align: end;
+  margin-right: 40px;
 }
